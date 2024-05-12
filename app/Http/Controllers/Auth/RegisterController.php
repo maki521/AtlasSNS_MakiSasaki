@@ -52,12 +52,23 @@ class RegisterController extends Controller
                 'password' => bcrypt($password),
             ]);
 
-            return redirect('added');
+            //セッションを使用してユーザー名表示させる。
+            $request->session()->put('username', $username);
+            return redirect('added')->with('username', $user);
+
+            //
+            $this->validate($request, [
+                  'username'    => '条件',
+                  'mail'  => '条件',
+                  'password'  => '条件',
+            ]);
+
         }
         return view('auth.register');
     }
 
     public function added(){
+
         return view('auth.added');
     }
 }

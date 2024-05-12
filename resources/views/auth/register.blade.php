@@ -1,8 +1,8 @@
 @extends('layouts.logout')
 
 @section('content')
-<!-- 適切なURLを入力してください -->
-{!! Form::open(['url' => '/〇〇']) !!}
+<!-- 適切なURLを入力してください ＝RegisterController参照して入力-->
+{!! Form::open(['url' => '/added']) !!}
 
 <h2>新規ユーザー登録</h2>
 
