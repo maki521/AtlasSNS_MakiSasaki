@@ -4,6 +4,18 @@
 <!-- 適切なURLを入力してください ＝RegisterController参照して入力-->
 {!! Form::open(['url' => '/added']) !!}
 
+
+@if ($errors->any())
+    <div>
+        <ul>
+            @foreach ($errors->all() as $error)
+                <li>{{ $error }}</li>
+            @endforeach
+        </ul>
+    </div>
+@endif
+
+
 <h2>新規ユーザー登録</h2>
 
 {{ Form::label('ユーザー名') }}

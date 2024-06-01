@@ -15,7 +15,7 @@ class UsersTableSeeder extends Seeder
         DB::table('Users')->insert([
             ['username' => 'ユーザー名',
             'mail' => 'atlas@sns.com',
-            'password' => Crypt::encryptString('12345')]
+            'password' => Crypt::encryptString('12345abc')]
         ]);
     }
 }

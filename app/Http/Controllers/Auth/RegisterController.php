@@ -58,9 +58,10 @@ class RegisterController extends Controller
 
             //
             $this->validate($request, [
-                  'username'    => '条件',
-                  'mail'  => '条件',
-                  'password'  => '条件',
+                  'username'    => 'required | between:2,12',
+                  'mail'  => 'required | between:5,40 | unique:users | email |',
+                  'password'  => 'required | alpha_num | between:8,20 | confirmed',
+                  'password_confirmation'   => 'required | alpha_num | between:8,20'
             ]);
 
         }
