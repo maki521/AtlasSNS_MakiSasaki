@@ -2,7 +2,7 @@
 
 @section('content')
 <!-- 適切なURLを入力してください =LoginController参照して入力-->
-{!! Form::open(['url' => '/login']) !!}
+{!! Form::open(['url' => '/top']) !!}
 
 <p>AtlasSNSへようこそ</p>
 
