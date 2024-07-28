@@ -2,7 +2,8 @@
 
 @section('content')
 <!-- 適切なURLを入力してください =LoginController参照して入力-->
-{!! Form::open(['url' => '/top']) !!}
+<!--//ログインするときメールパス入力→logincontroller→topに行くようにしてる-->
+{!! Form::open(['url' => '/login']) !!}
 
 <p>AtlasSNSへようこそ</p>
 
