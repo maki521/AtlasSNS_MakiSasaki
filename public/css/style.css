@@ -99,3 +99,27 @@ ul li a:hover {
     flex: 0 0 19%;
     border-left: 1px solid #727272;
 }
+
+/*投稿フォームについて
+/* フォーム全体のスタイル */
+.form-group {
+    position: relative;
+    margin: 20px 0;
+    /* 左寄せ */
+    text-align: left;
+}
+
+/* アイコンのスタイル */
+.form-group img {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+}
+
+/* テキストボックスのスタイル */
+.form-control {
+    padding-right: 40px;
+}
